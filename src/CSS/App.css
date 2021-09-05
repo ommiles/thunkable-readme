@@ -1,0 +1,110 @@
+body {
+	margin: 0;
+	color: #fff;
+	background-color: black;
+}
+
+.App {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	align-items: center;
+	width: 100vw;
+	height: 100vh;
+}
+
+.Header {
+	height: 10vh;
+	align-self: flex-start;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	width: 100%;
+	margin-top: 5px;
+	margin-bottom: 5px;
+}
+
+.Header h1 {
+	margin: 0;
+	padding-left: 60px;
+}
+
+.Header p {
+	margin: 0;
+	padding-right: 60px;
+}
+
+.Header h1 {
+	margin: 0;
+	font-size: calc(10px + 4vmin);
+	justify-self: flex-start;
+}
+
+.Body {
+	height: 80vh;
+	overflow: scroll;
+	/* min-width: 100%; */
+	max-width: 70vw;
+	width: 70vw;
+	margin: auto;
+	/* position: relative; */
+	-ms-overflow-style: none; /* IE and Edge */
+	scrollbar-width: none; /* Firefox */
+}
+
+.Body::-webkit-scrollbar {
+	display: none;
+}
+
+.Body h1 {
+	margin: 10px 0;
+}
+
+.Body p {
+	width: 350px;
+	max-width: 350px;
+	font-size: 20px;
+	padding: 10px 20px 20px 20px;
+	text-align: center;
+}
+
+.Footer {
+	height: 10vh;
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+	margin: 0 60px;
+}
+
+button {
+	font-size: calc(10px + 4vmin);
+	color: #fff;
+	background-color: transparent;
+	border: none;
+	outline: transparent;
+	padding: 0;
+}
+
+.Left-arrow {
+	margin-left: 70px;
+}
+
+.Right-arrow {
+	margin-right: 70px;
+}
+
+@media only screen and (max-width: 480px) and (min-width: 320px) {
+	.Body {
+		max-width: 80vw;
+		width: 80vw;
+	}
+}
+/* @media only screen and (max-width: 768px) and (min-width: 481px)  {...} */
+/* @media only screen and (max-width: 1024px) and (min-width: 769px)  {...} */
+/* @media only screen and (max-width: 1200px) and (min-width: 1025px)  {...} */
+@media (min-width: 1201px) {
+	.Body {
+		max-width: 60vw;
+		width: 60vw;
+	}
+}
