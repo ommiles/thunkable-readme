@@ -1,29 +1,49 @@
 @font-face {
-    font-family: 'Sohne Breit Leicht';
-    src: local('Sohne Breit Leicht'),
-      url(../Fonts/test-soehne-breit-leicht.woff2) format('woff2');
+	font-family: 'Sohne Breit Leicht';
+	src: local('Sohne Breit Leicht'),
+		url(../Fonts/test-soehne-breit-leicht.woff2) format('woff2');
 }
 
 @font-face {
-      font-family: 'Sohne Breit Extraleicht';
-    src: local('Sohne Breit Extraleicht'),
-      url(../Fonts/test-soehne-breit-extraleicht.woff2) format('woff2');
+	font-family: 'Sohne Breit Extraleicht';
+	src: local('Sohne Breit Extraleicht'),
+		url(../Fonts/test-soehne-breit-extraleicht.woff2) format('woff2');
 }
 
 @font-face {
-      font-family: 'Sohne Breit Extrafett';
-    src: local('Sohne Breit Extrafett'),
-      url(../Fonts/test-soehne-breit-extrafett.woff2) format('woff2');
+	font-family: 'Sohne Breit Extrafett';
+	src: local('Sohne Breit Extrafett'),
+		url(../Fonts/test-soehne-breit-extrafett.woff2) format('woff2');
+}
+
+@font-face {
+	font-family: 'Sohne Breit Halbfett';
+	src: local('Sohne Breit Halbfett'),
+		url(../Fonts/test-soehne-breit-halbfett.woff2) format('woff2');
+}
+
+@font-face {
+	font-family: 'Domaine Sans Fine Medium';
+	src: local('Domaine Sans Fine Medium'),
+		url(../Fonts/test-domaine-sans-fine-medium.woff2) format('woff2');
 }
 
 .soehne-breit-leicht {
-    font-family: 'Sohne Breit Leicht';
-  }
+	font-family: 'Sohne Breit Leicht';
+}
 
-.soehne-breit-extraleicht {
-    font-family: 'Sohne Breit Extraleicht';
-  }
+/* .soehne-breit-extraleicht {
+	font-family: 'Sohne Breit Extraleicht';
+} */
 
 .soehne-breit-extrafett {
-    font-family: 'Sohne Breit Extrafett';
-  }
+	font-family: 'Sohne Breit Extrafett';
+}
+
+.soehne-breit-halbfett {
+	font-family: 'Sohne Breit Halbfett';
+}
+
+.domaine-sans-fine-med {
+	font-family: 'Domaine Sans Fine Medium';
+}
