@@ -15,7 +15,8 @@ export const Cube = () => {
 		const renderer = new THREE.WebGLRenderer({ antialias: true });
 		const geometry = new THREE.BoxGeometry(1, 1, 1);
 		const texture = new THREE.TextureLoader().load(
-			'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRJjrEGUXiPiPgC7AKbYEn7wwNxsJjeVGN7Equm0Z3-T-3PI26T&s'
+			// 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRJjrEGUXiPiPgC7AKbYEn7wwNxsJjeVGN7Equm0Z3-T-3PI26T&s'
+			'https://raw.githubusercontent.com/ommiles/thunkable-readme/main/src/Assets/tldr.png?token=ARRKAEQRG5LW23RYLAGBWKTBG4DUQ'
 		);
 		var material = new THREE.MeshBasicMaterial({ map: texture });
 		const cube = new THREE.Mesh(geometry, material);

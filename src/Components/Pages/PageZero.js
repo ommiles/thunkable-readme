@@ -27,18 +27,15 @@ const PageZero = () => {
 				<div
 					className='container-1 domaine-sans-fine-med'
 					onClick={toggleTLDROn}
-					onMouseEnter={() => setColor(true)}
-					onMouseLeave={() => setColor(false)}
 				>
-					<h1 style={color === true ? { color: 'yellow' } : { color: 'white' }}>
-						tl;dr
-					</h1>
-					<span
-						class='blinking-cursor'
+					<h1
 						style={color === true ? { color: 'yellow' } : { color: 'white' }}
+						onMouseEnter={() => setColor(true)}
+						onMouseLeave={() => setColor(false)}
 					>
-						|
-					</span>
+						{color === true ? 'click me!' : 'tl;dr'}
+					</h1>
+					<span class='blinking-cursor'>{color === true ? '' : '|'}</span>
 				</div>
 			) : (
 				<div className='container-2'>
