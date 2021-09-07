@@ -1,6 +1,6 @@
 export const Footer = ({ pageNumber, setPageNumber }) => {
 	const handleClick = e => {
-		e.target.className === 'left-arrow'
+		e.target.className === 'Left-arrow'
 			? pageNumber === 0
 				? setPageNumber(0)
 				: setPageNumber(pageNumber - 1)

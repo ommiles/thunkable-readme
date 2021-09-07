@@ -24,7 +24,6 @@ export const Cube = () => {
 		camera.position.z = 4;
 		scene.add(cube);
 		renderer.setClearColor('#000000');
-		// renderer.setClearColor(0xff0000, 1);
 		renderer.setSize(width, height);
 
 		const renderScene = () => {
