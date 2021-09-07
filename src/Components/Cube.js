@@ -7,23 +7,23 @@ export const Cube = () => {
 	const controls = useRef(null);
 
 	useEffect(() => {
+		let frameId;
 		let width = mount.current.clientWidth;
 		let height = mount.current.clientHeight;
-		console.log(width);
-		console.log(height);
-		console.log(mount);
-		let frameId;
-
 		const scene = new THREE.Scene();
 		const camera = new THREE.PerspectiveCamera(25, width / height, 0.1, 1000);
 		const renderer = new THREE.WebGLRenderer({ antialias: true });
 		const geometry = new THREE.BoxGeometry(1, 1, 1);
-		const material = new THREE.MeshBasicMaterial({ color: 0xff00ff });
+		const texture = new THREE.TextureLoader().load(
+			'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRJjrEGUXiPiPgC7AKbYEn7wwNxsJjeVGN7Equm0Z3-T-3PI26T&s'
+		);
+		var material = new THREE.MeshBasicMaterial({ map: texture });
 		const cube = new THREE.Mesh(geometry, material);
 
 		camera.position.z = 4;
 		scene.add(cube);
 		renderer.setClearColor('#000000');
+		// renderer.setClearColor(0xff0000, 1);
 		renderer.setSize(width, height);
 
 		const renderScene = () => {
@@ -71,7 +71,7 @@ export const Cube = () => {
 
 			scene.remove(cube);
 			geometry.dispose();
-			material.dispose();
+			// material.dispose();
 		};
 	}, []);
 
@@ -85,7 +85,7 @@ export const Cube = () => {
 
 	return (
 		<div
-			className="vis"
+			className='vis'
 			ref={mount}
 			onClick={() => setAnimating(!isAnimating)}
 		/>

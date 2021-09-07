@@ -9,7 +9,7 @@ function App() {
 	const [pageNumber, setPageNumber] = useState(0);
 
 	return (
-		<div className="App soehne-breit-leicht">
+		<div className='App soehne-breit-leicht'>
 			<Header />
 			<Body pageNumber={pageNumber} />
 			<Footer pageNumber={pageNumber} setPageNumber={setPageNumber} />

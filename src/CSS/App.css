@@ -146,6 +146,10 @@ button {
 	margin-right: 70px;
 }
 
+.display-none {
+	display: none;
+}
+
 @media only screen and (max-width: 480px) and (min-width: 320px) {
 	.Body {
 		max-width: 80vw;

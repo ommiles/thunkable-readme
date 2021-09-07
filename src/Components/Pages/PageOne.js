@@ -1,6 +1,5 @@
-import React, { useState, useRef, useEffect } from 'react';
+import { useState, useRef, useEffect } from 'react';
 import { gsap } from 'gsap';
-// import image1 from '../../Assets/marek-piwnicki-VTjrza-1UlE-unsplash.jpg';
 
 const PageOne = () => {
 	const [display, setDisplay] = useState(0);
@@ -27,7 +26,7 @@ const PageOne = () => {
 		});
 	}, []);
 
-	const handleClick = (e) => {
+	const handleClick = e => {
 		console.log(e.target.id);
 		if (display === e.target.id) {
 			setDisplay(0);
@@ -42,19 +41,19 @@ const PageOne = () => {
 
 	return (
 		<>
-			<div className="Body Page-One soehne-breit-extraleicht">
-				<h1 style={{ fontSize: 70 }} className="soehne-breit-halbfett">
+			<div className='Body Page-One soehne-breit-extraleicht'>
+				<h1 style={{ fontSize: 70 }} className='soehne-breit-halbfett'>
 					What I Value:
 				</h1>
 
 				<div
 					style={display === 0 || display === '1' ? null : { display: 'none' }}
 					ref={h1Container1}
-					className="h1-container"
+					className='h1-container'
 				>
 					<h1>Sleeve Roll-er-up-er</h1>
 					<h1
-						id="1"
+						id='1'
 						onMouseEnter={hoverOn}
 						onClick={handleClick}
 						style={{ cursor: 'pointer' }}
@@ -84,8 +83,8 @@ const PageOne = () => {
 								shape my POV.
 							</p>
 							<img
-								src="https://source.unsplash.com/random/480x640"
-								alt="unsplash"
+								src='https://source.unsplash.com/random/480x640'
+								alt='unsplash'
 								style={{ position: 'absolute', left: 200, top: 10 }}
 							/>
 						</div>
@@ -94,11 +93,11 @@ const PageOne = () => {
 				<div
 					style={display === 0 || display === '2' ? null : { display: 'none' }}
 					ref={h1Container2}
-					className="h1-container"
+					className='h1-container'
 				>
 					<h1>Devil's In the Details</h1>
 					<h1
-						id="2"
+						id='2'
 						onMouseEnter={hoverOn}
 						onClick={handleClick}
 						style={{ cursor: 'pointer' }}
@@ -127,8 +126,8 @@ const PageOne = () => {
 								is the correct or relevant data at all.
 							</p>
 							<img
-								src="https://source.unsplash.com/random/480x640"
-								alt="unsplash"
+								src='https://source.unsplash.com/random/480x640'
+								alt='unsplash'
 								style={{ position: 'absolute', left: 200, top: 10 }}
 							/>
 						</div>
@@ -137,11 +136,11 @@ const PageOne = () => {
 				<div
 					style={display === 0 || display === '3' ? null : { display: 'none' }}
 					ref={h1Container3}
-					className="h1-container"
+					className='h1-container'
 				>
 					<h1>Pluck</h1>
 					<h1
-						id="3"
+						id='3'
 						onMouseEnter={hoverOn}
 						onClick={handleClick}
 						style={{ cursor: 'pointer' }}
@@ -176,8 +175,8 @@ const PageOne = () => {
 								please them.
 							</p>
 							<img
-								src="https://source.unsplash.com/random/480x640"
-								alt="unsplash"
+								src='https://source.unsplash.com/random/480x640'
+								alt='unsplash'
 								style={{ position: 'absolute', left: 200, top: 10 }}
 							/>
 						</div>
@@ -186,11 +185,11 @@ const PageOne = () => {
 				<div
 					style={display === 0 || display === '4' ? null : { display: 'none' }}
 					ref={h1Container4}
-					className="h1-container"
+					className='h1-container'
 				>
 					<h1>Brass Tacks</h1>
 					<h1
-						id="4"
+						id='4'
 						onMouseEnter={hoverOn}
 						onClick={handleClick}
 						style={{ cursor: 'pointer' }}
@@ -218,8 +217,8 @@ const PageOne = () => {
 								crucial.
 							</p>
 							<img
-								src="https://source.unsplash.com/random/480x640"
-								alt="unsplash"
+								src='https://source.unsplash.com/random/480x640'
+								alt='unsplash'
 								style={{ position: 'absolute', left: 200, top: 10 }}
 							/>
 						</div>
