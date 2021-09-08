@@ -10,7 +10,7 @@ function App() {
 
 	return (
 		<div className='App soehne-breit-leicht'>
-			<Header />
+			<Header setPageNumber={setPageNumber} />
 			<Body pageNumber={pageNumber} />
 			<Footer pageNumber={pageNumber} setPageNumber={setPageNumber} />
 		</div>

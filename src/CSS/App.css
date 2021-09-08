@@ -69,9 +69,16 @@ body {
 .Page-One p {
 	width: 440px;
 	max-width: 440px;
-	font-size: 20px;
+	font-size: 18px;
 	padding: 10px 20px 20px 20px;
-	text-align: center;
+	text-align: start;
+	position: absolute;
+	left: 300px;
+	top: 35px;
+	z-index: 2;
+	width: 400px;
+	word-spacing: 2px;
+	hyphens: auto;
 }
 
 .Page-Zero .container-1 {
@@ -107,7 +114,6 @@ body {
 	right: 0;
 	bottom: 0;
 	left: 0;
-	/* z-index: 3; */
 }
 
 .vis {
@@ -116,7 +122,31 @@ body {
 	right: 0;
 	bottom: 0;
 	left: 0;
-	/* z-index: 1; */
+}
+
+.split-parent {
+	overflow: hidden;
+}
+
+.split-child {
+	display: inline-block;
+}
+
+.Page-Three h2 {
+	position: relative;
+	width: 35vw;
+	max-width: 35vw;
+	margin-bottom: -40px;
+	margin-top: 0;
+}
+
+.Page-Three p {
+	position: relative;
+	bottom: 50%;
+	left: 15%;
+	width: 40%;
+	max-width: 40%;
+	margin: 0;
 }
 
 .Footer {
@@ -125,7 +155,6 @@ body {
 	width: 80%;
 	display: flex;
 	justify-content: space-between;
-	align-items: flex-start;
 	margin: 0 60px;
 }
 
@@ -151,6 +180,20 @@ button {
 	display: none;
 }
 
+.circle-container {
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+}
+
+.circle {
+	width: 10px;
+	height: 10px;
+	border: #fff solid 1px;
+	border-radius: 100%;
+	margin: 0 10px;
+}
+
 @media only screen and (max-width: 480px) {
 	.Body {
 		max-width: 80vw;
@@ -159,21 +202,71 @@ button {
 	.Page-Zero h1 {
 		font-size: 80px;
 	}
+	.Page-Three h2 {
+		font-size: 30px;
+		width: 100%;
+		max-width: 100%;
+		margin-bottom: 30px;
+		text-decoration: underline;
+	}
+
+	.Page-Three p {
+		width: 100%;
+		max-width: 100%;
+		bottom: 0;
+		left: 0;
+	}
 }
 @media only screen and (max-width: 768px) and (min-width: 481px) {
 	.Page-Zero h1 {
 		font-size: 90px;
+	}
+	.Page-Three h2 {
+		font-size: 24px;
+		font-size: 60px;
+		width: 100%;
+		max-width: 100%;
+		margin: 50px;
+	}
+	.Page-Three p {
+		width: 100%;
+		max-width: 100%;
+		bottom: 0;
+		left: 0;
 	}
 }
 @media only screen and (max-width: 1024px) and (min-width: 769px) {
 	.Page-Zero h1 {
 		font-size: 90px;
 	}
+	.Page-Three h2 {
+		font-size: 30px;
+		font-size: 60px;
+		width: 100%;
+		max-width: 100%;
+	}
 }
-/* @media only screen and (max-width: 1200px) and (min-width: 1025px)  {...} */
-@media (min-width: 1201px) {
+@media only screen and (max-width: 1200px) and (min-width: 1025px) {
+	.Page-Three h2 {
+		font-size: 40px;
+	}
+}
+@media (min-width: 1201px) and (max-width: 1699px) {
 	.Body {
 		max-width: 60vw;
 		width: 60vw;
+	}
+	.Page-Three h2 {
+		font-size: 50px;
+	}
+}
+
+@media (min-width: 1700px) {
+	.Body {
+		max-width: 60vw;
+		width: 60vw;
+	}
+	.Page-Three h2 {
+		font-size: 60px;
 	}
 }

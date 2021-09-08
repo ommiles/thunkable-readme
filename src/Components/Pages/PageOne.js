@@ -1,5 +1,6 @@
 import { useState, useRef, useEffect } from 'react';
 import { gsap } from 'gsap';
+import image from '../../Assets/keith-camilleri-sV_3SBuiS4I-unsplash.jpg';
 
 const PageOne = () => {
 	const [display, setDisplay] = useState(0);
@@ -35,43 +36,26 @@ const PageOne = () => {
 		}
 	};
 
-	const hoverOn = () => {
-		console.log('some animation');
-	};
-
 	return (
 		<>
 			<div className='Body Page-One soehne-breit-extraleicht'>
 				<h1 style={{ fontSize: 70 }} className='soehne-breit-halbfett'>
 					What I Value:
 				</h1>
-
 				<div
 					style={display === 0 || display === '1' ? null : { display: 'none' }}
 					ref={h1Container1}
 					className='h1-container'
 				>
 					<h1>Sleeve Roll-er-up-er</h1>
-					<h1
-						id='1'
-						onMouseEnter={hoverOn}
-						onClick={handleClick}
-						style={{ cursor: 'pointer' }}
-					>
+					<h1 id='1' onClick={handleClick} style={{ cursor: 'pointer' }}>
 						{display === '1' ? 'ˇ' : '+'}
 					</h1>
 				</div>
 				{display === '1' ? (
 					<div style={{ position: 'relative' }}>
 						<div style={{ position: 'absolute' }}>
-							<p
-								style={{
-									position: 'absolute',
-									left: 200,
-									top: 10,
-									zIndex: 2,
-								}}
-							>
+							<p>
 								I am ambitions, adept at working at a very detailed level, and
 								have streaks of competitiveness and perfectionism (working on
 								those). When I need to tackle a complex problem, I like to start
@@ -83,9 +67,15 @@ const PageOne = () => {
 								shape my POV.
 							</p>
 							<img
-								src='https://source.unsplash.com/random/480x640'
+								src={image}
 								alt='unsplash'
-								style={{ position: 'absolute', left: 200, top: 10 }}
+								style={{
+									position: 'absolute',
+									left: 100,
+									top: 10,
+									width: 400,
+									height: 400,
+								}}
 							/>
 						</div>
 					</div>
@@ -96,26 +86,14 @@ const PageOne = () => {
 					className='h1-container'
 				>
 					<h1>Devil's In the Details</h1>
-					<h1
-						id='2'
-						onMouseEnter={hoverOn}
-						onClick={handleClick}
-						style={{ cursor: 'pointer' }}
-					>
+					<h1 id='2' onClick={handleClick} style={{ cursor: 'pointer' }}>
 						{display === '2' ? 'ˇ' : '+'}
 					</h1>
 				</div>
 				{display === '2' ? (
 					<div style={{ position: 'relative' }}>
 						<div style={{ position: 'absolute' }}>
-							<p
-								style={{
-									position: 'absolute',
-									left: 200,
-									top: 10,
-									zIndex: 2,
-								}}
-							>
+							<p>
 								In my view, facts‐of‐the‐matter are key, but I try not to allow
 								them to fetter the bounds of my imagination. I use evidence as a
 								starting point and as I build up, I allow my ideas free-reign.
@@ -126,9 +104,15 @@ const PageOne = () => {
 								is the correct or relevant data at all.
 							</p>
 							<img
-								src='https://source.unsplash.com/random/480x640'
+								src={image}
 								alt='unsplash'
-								style={{ position: 'absolute', left: 200, top: 10 }}
+								style={{
+									position: 'absolute',
+									left: 100,
+									top: 10,
+									width: 400,
+									height: 400,
+								}}
 							/>
 						</div>
 					</div>
@@ -139,26 +123,14 @@ const PageOne = () => {
 					className='h1-container'
 				>
 					<h1>Pluck</h1>
-					<h1
-						id='3'
-						onMouseEnter={hoverOn}
-						onClick={handleClick}
-						style={{ cursor: 'pointer' }}
-					>
+					<h1 id='3' onClick={handleClick} style={{ cursor: 'pointer' }}>
 						{display === '3' ? 'ˇ' : '+'}
 					</h1>
 				</div>
 				{display === '3' ? (
 					<div style={{ position: 'relative' }}>
 						<div style={{ position: 'absolute' }}>
-							<p
-								style={{
-									position: 'absolute',
-									left: 200,
-									top: 10,
-									zIndex: 2,
-								}}
-							>
+							<p>
 								When faced with a head on challenge, I am very capable of taking
 								a tough and unyielding stance. Regarding my goals and passions,
 								I'm frequently outspoken, and will argue my position forcefully,
@@ -175,9 +147,15 @@ const PageOne = () => {
 								please them.
 							</p>
 							<img
-								src='https://source.unsplash.com/random/480x640'
+								src={image}
 								alt='unsplash'
-								style={{ position: 'absolute', left: 200, top: 10 }}
+								style={{
+									position: 'absolute',
+									left: 100,
+									top: 10,
+									width: 400,
+									height: 400,
+								}}
 							/>
 						</div>
 					</div>
@@ -188,26 +166,14 @@ const PageOne = () => {
 					className='h1-container'
 				>
 					<h1>Brass Tacks</h1>
-					<h1
-						id='4'
-						onMouseEnter={hoverOn}
-						onClick={handleClick}
-						style={{ cursor: 'pointer' }}
-					>
+					<h1 id='4' onClick={handleClick} style={{ cursor: 'pointer' }}>
 						{display === '4' ? 'ˇ' : '+'}
 					</h1>
 				</div>
 				{display === '4' ? (
 					<div style={{ position: 'relative' }}>
 						<div style={{ position: 'absolute' }}>
-							<p
-								style={{
-									position: 'absolute',
-									left: 200,
-									top: 10,
-									zIndex: 2,
-								}}
-							>
+							<p>
 								My abilities to be tough and take a strict no‐nonsense approach
 								to situations are useful when I am dealing with difficult
 								situations. I've found that where others procrastinate, I can
@@ -217,9 +183,15 @@ const PageOne = () => {
 								crucial.
 							</p>
 							<img
-								src='https://source.unsplash.com/random/480x640'
+								src={image}
 								alt='unsplash'
-								style={{ position: 'absolute', left: 200, top: 10 }}
+								style={{
+									position: 'absolute',
+									left: 100,
+									top: 10,
+									width: 400,
+									height: 400,
+								}}
 							/>
 						</div>
 					</div>
