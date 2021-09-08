@@ -152,7 +152,9 @@ body {
 .Footer {
 	max-height: 20vh;
 	height: 20vh;
-	width: 80%;
+	/* width: 80%; */
+	max-width: 70vw;
+    width: 70vw;
 	display: flex;
 	justify-content: space-between;
 	margin: 0 60px;
@@ -166,14 +168,6 @@ button {
 	outline: transparent;
 	padding: 0;
 	cursor: pointer;
-}
-
-.Left-arrow {
-	margin-left: 70px;
-}
-
-.Right-arrow {
-	margin-right: 70px;
 }
 
 .display-none {
@@ -222,8 +216,8 @@ button {
 		font-size: 90px;
 	}
 	.Page-Three h2 {
-		font-size: 24px;
-		font-size: 60px;
+		font-size: 30px;
+		text-decoration: underline;
 		width: 100%;
 		max-width: 100%;
 		margin: 50px;
@@ -241,9 +235,16 @@ button {
 	}
 	.Page-Three h2 {
 		font-size: 30px;
-		font-size: 60px;
 		width: 100%;
 		max-width: 100%;
+		margin: 50px;
+		text-decoration: underline;
+	}
+	.Page-Three p {
+		width: 100%;
+		max-width: 100%;
+		bottom: 0;
+		left: 0;
 	}
 }
 @media only screen and (max-width: 1200px) and (min-width: 1025px) {
@@ -259,6 +260,15 @@ button {
 	.Page-Three h2 {
 		font-size: 50px;
 	}
+	.Page-Three h2:nth-child(2) {
+		margin-bottom: 20px;
+	}
+}
+
+@media (min-width: 1636px) and (max-width: 1699px) {
+	.Page-Three h2:nth-child(2) {
+		margin-bottom: 20px;
+	}
 }
 
 @media (min-width: 1700px) {
@@ -268,5 +278,8 @@ button {
 	}
 	.Page-Three h2 {
 		font-size: 60px;
+	}
+	.Page-Three h2:nth-child(2) {
+		margin-bottom: 20px;
 	}
 }

@@ -1,6 +1,6 @@
 import { useState, useRef, useEffect } from 'react';
 import { gsap } from 'gsap';
-import image from '../../Assets/keith-camilleri-sV_3SBuiS4I-unsplash.jpg';
+import image from '../../Assets/mike-yukhtenko-wfh8dDlNFOk-unsplash.jpg';
 
 const PageOne = () => {
 	const [display, setDisplay] = useState(0);
